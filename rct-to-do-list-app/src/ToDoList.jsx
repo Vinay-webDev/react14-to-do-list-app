@@ -9,7 +9,7 @@ function ToDoList() {
    function handleInputChange(event) {
         setNewTask(event.target.value);
    }
-   function AddTask() {
+   function addTask() {
 
    }
    function deleteTask(index) {
@@ -29,6 +29,8 @@ function ToDoList() {
                        placeholder="Enter a task...."
                        value={newTask}
                        onChange={handleInputChange} />
+                <button className="add-button"
+                        onClick={addTask} > add </button>
             </div>
         </div>
     );

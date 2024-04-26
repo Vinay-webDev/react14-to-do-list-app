@@ -34,7 +34,13 @@ button {
 .move-button:hover {
     background-color: hsla(180, 100%, 35%, 0.78);
 }
-
+input[type="text"] {
+    font-size: 1.6em;
+    border: 2px solid hsla(0, 0%, 50%, 0.606);
+    border-radius: 5px;
+    padding: 10px;
+    color: hsla(0, 0%, 35%, 0.906);
+}
 
 
 

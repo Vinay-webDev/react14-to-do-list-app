@@ -1,3 +1,6 @@
+body{
+    background-color: hsla(0, 0%, 0%, 0.9);
+}
 .to-do-list {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -5,6 +8,7 @@
 }
 h1 {
     font-size: 4em;
+    color: white;
 }
 button {
     font-size: 1.7em;
@@ -14,7 +18,7 @@ button {
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.5 ease;
+    transition: background-color 0.5s ease;
 }
 .add-button {
     background-color: hsl(109, 100%, 50%);
@@ -36,11 +40,40 @@ button {
 }
 input[type="text"] {
     font-size: 1.6em;
-    border: 2px solid hsla(0, 0%, 50%, 0.606);
+    border: 1px solid hsla(0, 0%, 50%, 0.606);
     border-radius: 5px;
     padding: 10px;
     color: hsla(0, 0%, 35%, 0.906);
 }
+ol {
+    padding: 0;
+}
+li {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: hsla(0, 0%, 90%, 0.5);
+    border: 1px solid hsla(0, 0%, 70%, 0.5);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.text {
+    flex: 1;
+}
+.delete-button, .move-button {
+    padding: 8px 12px;
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
 
 
 

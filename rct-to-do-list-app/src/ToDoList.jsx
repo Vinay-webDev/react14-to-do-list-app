@@ -10,10 +10,19 @@ function ToDoList() {
         setNewTask(event.target.value);
    }
    function addTask() {
-
+        /* it's always good practice to use updater function */
+        //setTasks( t => [...t, newTask]);
+        /* to reset after adding new task */
+        //setNewTask("");
+        /* when somebody couldn't type any task they can simply 
+        add an empty task so to that we have *** */
+        if (newTask.trim() !== "") {
+            setTasks(t => [...t, newTask]);
+            setNewTask("");
+        }
    }
    function deleteTask(index) {
-
+        
    }
    function moveTaskUp(index) {
 

@@ -22,11 +22,17 @@ function ToDoList() {
         }
    }
    function deleteTask(index) {
-        const newUpdatedTask = tasks.filter((_, i) => i !== index);
-        setTasks(newUpdatedTask);
+        const newUpdatedTasks = tasks.filter((_, i) => i !== index);
+        setTasks(newUpdatedTasks);
    }
    function moveTaskUp(index) {
-
+        if (index > 0) {
+            const updatedTasks = [...tasks];
+            /* we use array destructuring to swap two elements within our array */
+            // so here's the formula 
+            [updatedTasks[index],updatedTasks[index -1]] = [updatedTasks[index - 1],updatedTasks[index]];
+            setTasks(updatedTasks);
+        }
    }
    function moveTaskDown(index) {
 

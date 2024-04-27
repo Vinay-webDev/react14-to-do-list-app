@@ -22,7 +22,8 @@ function ToDoList() {
         }
    }
    function deleteTask(index) {
-        
+        const newUpdatedTask = tasks.filter((_, i) => i !== index);
+        setTasks(newUpdatedTask);
    }
    function moveTaskUp(index) {
 
@@ -51,11 +52,11 @@ function ToDoList() {
                         </button>
                         <button className="move-button"
                                 onClick={() => moveTaskUp(index)} >
-                                👆
+                                ⬆️
                         </button>
                         <button className="move-button"
                                 onClick={() => moveTaskDown(index)} >
-                                👇
+                                ⬇️
                         </button>
                    </li>)}
             </ol>
@@ -64,7 +65,7 @@ function ToDoList() {
 }
 export default ToDoList
 
-
+/* hsla(180, 100%, 62%, 0.78) */
 
 
 

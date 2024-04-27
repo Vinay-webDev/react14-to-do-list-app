@@ -33,10 +33,10 @@ button {
     background-color: rgb(153, 0, 18);
 }
 .move-button {
-    background-color: hsla(180, 100%, 62%, 0.78);
+    background-color: hsla(59, 100%, 50%, 0.8);
 }
 .move-button:hover {
-    background-color: hsla(180, 100%, 35%, 0.78);
+    background-color: hsla(59, 100%, 40%, 0.9);
 }
 input[type="text"] {
     font-size: 1.6em;
@@ -67,7 +67,9 @@ li {
     font-size: 1.4rem;
     margin-left: 10px;
 }
-
+.add-button {
+    margin-left: 10px;
+}
 
 
 

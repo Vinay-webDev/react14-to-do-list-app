@@ -1,4 +1,3 @@
-/* To-do-list App in react */
 import ToDoList from './ToDoList.jsx'
 function App() {
   
